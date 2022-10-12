@@ -1,0 +1,12 @@
+2022-10-11 23:38:05,094:ERROR:Invalid birthday format
+2022-10-11 23:38:05,270:ERROR:Error processing line id,name,birthday for ID #id
+2022-10-11 23:38:05,270:ERROR:Error processing line 13,Isaac Allan,29/072006 for ID #13
+2022-10-11 23:38:05,270:ERROR:Error processing line 27,Ruth Ogden,23/23/2007 for ID #27
+2022-10-11 23:38:05,270:ERROR:Error processing line 30,Ava Jackson,1411/1997 for ID #30
+2022-10-11 23:38:05,270:ERROR:Error processing line 47,Jane Nash,11/11/19895 for ID #47
+2022-10-11 23:38:05,270:ERROR:Error processing line 48,Joshua Glover,44/01/1972 for ID #48
+2022-10-11 23:38:05,270:ERROR:Error processing line 67,Amy Gill,29*06*1988 for ID #67
+2022-10-11 23:38:05,270:ERROR:Error processing line 71,Penelope Underwood,00/10/1995 for ID #71
+2022-10-11 23:38:05,270:ERROR:Error processing line 78,Stephanie Coleman,25/19/1998 for ID #78
+2022-10-11 23:38:05,270:ERROR:Error processing line 87,Rachel Powell,09-08-2003 for ID #87
+2022-10-11 23:38:05,270:ERROR:Error processing line 93,David Howard,22//01//2013 for ID #93
