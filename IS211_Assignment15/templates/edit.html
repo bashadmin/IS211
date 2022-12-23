@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFqNfFZj7nOEU4o+" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Edit Post</h1>
+    <form action="/edit-story" method="post">
+      <input type="hidden" name="id" value="{{ post.id }}">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" name="title" value="{{ post.heading }}">
+      </div>
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea class="form-control" id="content" name="content">{{ post.content }}</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form> 
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFqNfFZj7nOEU4o+" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Blog Posts</h1>
+    {% for post in posts %}
+      <div class="card mb-3">
+        <h2 class="card-header">{{ post.heading }}</h2>
+        <div class="card-body">
+          <p class="card-text">{{ post.content }}</p>
+          <p class="card-text"><small class="text-muted">By {{ post.author }} on {{ post.timestamp }}</small></p>
+        </div>
+      </div>
+    {% endfor %}
+  </body>
+</html>
+
+
+<!-- 
+The index.html file in the template folder should contain the HTML code for the index page of the application. 
+This page could display a list of posts from the database, along with any other elements or layout needed for the page
+
+This template uses Jinja2 syntax to loop through the posts list passed to the template and display the heading, content, 
+author, and timestamp of each post. You can customize the layout and elements of the page as needed.
+
+Note that the index.html file should only contain the HTML code for the page, not any application logic. 
+The application logic should be handled by the Flask code.
+-->

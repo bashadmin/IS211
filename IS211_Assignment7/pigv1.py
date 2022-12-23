@@ -1,18 +1,4 @@
-
-if __name__ == "__main__":
-    pass
-
 import random
-
-def main():
-    # Create the players
-    player1 = Player("Player 1")
-    player2 = Player("Player 2")
-    players = [player1, player2]
-
-    # Start the game
-    game = Game(players)
-    game.play()
 
 class Die:
     def roll(self):
@@ -58,7 +44,7 @@ class Game:
                 break
             else:
                 print("Invalid decision. Please enter 'r' or 'h'.")
-        
+    
     def is_game_over(self):
         return any(player.score >= 100 for player in self.players)
     
@@ -67,3 +53,12 @@ class Game:
             self.play_turn()
             self.current_player = (self.current_player + 1) % len(self.players)
         print("Game over! The winner is {}!".format(self.players[self.current_player].name))
+
+# Create the players
+player1 = Player("Player 1")
+player2 = Player("Player 2")
+players = [player1, player2]
+
+# Start the game
+game = Game(players)
+game.play()

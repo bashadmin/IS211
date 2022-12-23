@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFqNfFZj7nOEU4o+" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Login</h1>
+    <p>{{ message }}</p>
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" class="form-control" id="username" name="username">
+      </div>
+      <button type="submit" class="btn btn-primary">Log in</button>
+    </form> 
+  </body>
+</html>

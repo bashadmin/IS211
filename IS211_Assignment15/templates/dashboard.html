@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFqNfFZj7nOEU4o+" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+    <a href="/add-story" class="btn btn-primary">Add a new story</a>
+    {% for post in posts %}
+      <h2>{{ post.heading }}</h2>
+      <p>{{ post.content }}</p>
+      <form action="/edit-story" method="post">
+        <input type="hidden" name="id" value="{{ post.id }}">
+        <button type="submit" class="btn btn-secondary">Edit</button>
+      </form>
+      <a href="/delete/{{ post.id }}" class="btn btn-danger">Delete</a>
+      <p>By {{ post.author }} on {{ post.timestamp }}</p>
+    {% endfor %}
+    <a href="/logout" class="btn btn-secondary">Logout</a>
+  </body>
+</html>
